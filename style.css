@@ -1,0 +1,73 @@
+@font-face {
+  font-family: Wonderland;
+  src: url('css/UnicornCalligraphy-oK7B.ttf');
+}
+
+* {
+  font-family: Wonderland;
+}
+
+body {
+  /* background: transparent url("forest.jpg") no-repeat fixed center; */
+  background: beige;
+  
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
+section.image {
+
+  background: transparent url("forest.jpg") no-repeat cover center; 
+}
+
+.forest-img {
+  width: 100%;
+  
+}
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  height: 160px;
+  position: relative;
+  overflow: hidden;
+}
+
+header > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  --offset: 0px;
+  --blur: 2px;
+}
+
+header > div > img {
+  display: block;
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+
+  transform: translatex(var(--offset));
+  filter: blur(var(--blur));
+}
+
